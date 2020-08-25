@@ -85,8 +85,8 @@ a<sub>gdy chcę dolny indeks</sub> <br/>
 
 <i><b>To jest jakiś tekst śżćź</b></i>
 
-<p><font size="80">&larr; </font></p>
-<p align="center"> &#9731; </p>
+<p><font size="2000"> &larr; </font></p>
+<p align="center"><font size="100"> &#9731;</font></p>
 
 <p align="center " title="tekst w dymku kursora ">I to jest inny tekst</p>
 <p align="justify ">i tu powinien być akapii tu powinien być akapii tu powinien być akapii tu powinien być akapii tu
@@ -113,18 +113,74 @@ a<sub>gdy chcę dolny indeks</sub> <br/>
 </di>
 
 <fieldset> <!--pole, bloczek -->
-    <legenda> Opis </legenda>
+    <legenda><font size="50">Opis</font> </legenda>
     To jest opisowy opis z opisowym opisem ;)
 </fieldset>
 <br/> <br/> <br/><br/>
 
 <hr width="40%" color="red" align="center"/> <!-- kreseczka -->
 
-<!-- tr Table Row czyli wiersz tabelki-->
-<table>
-    <tr></tr>
+<!--
+    caption -            główny nagówek tabelki, ma znaczenie semantyczne
+    tr Table Row        czyli wiersz tabelki
+    td Table data -     informacja w tabelce, reprezenuje komórkę (cell) lub też rubrykę
+    cellpadding -       wypełnienie komórki
+    cellspacing -       obszar pomiędzy komórkami
+    th -                nagłowek tabelki
+    width -             szerokość tabelki
+    heigth -            wysokość tabelki, podaje się w pixelach
+    align -             dostępne opcje to left/center/right
+    valign -            pionowe wyrównanie - dostępne opcje to top/middle/bottom  -> można pisać w th, td i tr
+        thead           nagłowek tabelki
+        tbody           ciało tabelki
+        tfoot           stopka tabelki
+        colspan         scalanie komórek (rozpiętość komórek) w linii poziomej
+        rowspan         scalanie komórek w linii pionowej
+
+-->
+<table border="1" cellpadding="10" cellspacing="0" height="200" width="400">
+    <caption>Nagłówek główny tabelki</caption>
+
+    <thead bgcolor="gray">
+    <tr>
+        <th>Nagłówek 1</th>
+        <th>Nagłowek 2</th>
+        <th>Nagłówek 3</th>
+        <th>Nagłówek 4</th>
+        <th>Nagłówek 5</th>
+    </tr>
+     </thead>
+
+    <tfoot bgcolor="pink">
+        <tr>
+            <td colspan="5">Scalonych 5 komórek</td>
+
+        </tr>
+
+    </tfoot>
+
+   <tbody valign="top" bgcolor="yellow">
+    <tr>
+        <td>1</td>
+        <td align="center" valign="top">2</td>
+        <td align="left">3</td>
+        <td align="right" rowspan="2" bgcolor="#b22222">4</td>
+        <td>5</td>
+    </tr>
+
+     <tr>
+        <td colspan="3" align="center" width="10%">scalone 3 komórki</td>
+        <td>Info 4</td>
+    </tr>
+
+   </tbody>
 
 </table>
+
+
+
+
+
 
 
 
