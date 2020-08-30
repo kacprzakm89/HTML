@@ -181,7 +181,11 @@ a<sub>gdy chcę dolny indeks</sub> <br/>
 <br/>
 <br/>
 
-<a href="http:/google.pl" title="Wyszukiwarka (tekst w dymku)">Google</a> jako link do wyszukiwarki <br/>
+<a href="http:/google.pl" title="Wyszukiwarka (tekst w dymku)">Google</a> jako link do wyszukiwarki <div>
+
+
+
+</div>
 
 <a href="mailto:kacprzak.m@onet.eu">Napisz do mnie</a> <br/><br/><br/><br/><br/><br/>
 
@@ -193,7 +197,60 @@ a<sub>gdy chcę dolny indeks</sub> <br/>
 
         -->
 
+<form action="mailto:kacprzak.m@onet.eu?subject=Ankieta" method="post" enctype="text/plain" accept-charset="utf-8">
+    Imię: <input type="text" name="imię" value="Wartość domyślna" />
+    Hasło: <input type="password" name="hasło" /> <br/>
 
+    <fieldset>
+        <legend>Jakie jest Twoje hobby?</legend>
+            <input type="checkbox" name="hobby" value="łyżwiarstwo" id="łyżwiarstwo" /> <label for="łyżwiarstwo">Łyżwiarstwo</label>
+            <input type="checkbox" name="hobby" value="pływanie" id="pływanie" /> <label for="pływanie">Pływanie</label>
+            <input type="checkbox" name="hobby" value="kolarstwo" id="kolarstwo" /> <label for="kolarstwo">Kolarstwo</label>
+    </fieldset>
+    <br/>
+
+    <fieldset>
+        <legend>Do jakiej kategorii wiekowej należysz?</legend>
+           <input type="radio" name="kategoria wiekowa" value="1-18" id="1" /> <label for="1">1-18</label>
+            <input type="radio" name="kategoria wiekowa" value="19-36" id="2" /> <label for="2">19-36</label>
+            <input type="radio" name="kategoria wiekowa" value="37+" id="3" /> <label for="3">37+</label>
+    </fieldset>
+    <br/>
+
+    <textarea rows="20" cols="30" disabled="disabled">
+        To jest treść nie do zmienienia
+    </textarea>
+    <br/>
+
+    <select name="kolory" multiple="multiple">
+        <option value="żółty">Żółty</option>
+        <option value="zielony">Zielony</option>
+        <option value="niebieski">Niebieski</option>
+    </select>
+    <br/>
+
+    <input type="file" name="plik"/>
+    <br/>
+
+    <input type="hidden" name="data" value="29.08.2020"/>
+    <br/>
+
+    <button type="submit">
+        <table>
+            <tr><td>1</td><td>2</td></tr>
+            <tr><td>3</td><td>4</td></tr>
+        </table>
+
+    </button>
+
+    <input type="submit" value="Wyślij"/>
+    <br/>
+
+
+
+
+
+</form>
 
 
 
