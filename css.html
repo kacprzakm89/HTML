@@ -42,14 +42,27 @@
 
             div
             {
-                background-color: firebrick;
+                background-color: #b22222;
                 text-align: justify;
                 width: 300px;
             }
 
+            div.menu_linki a:link
+            {
+                color: chartreuse;
+                text-decoration: none;
+            }
+            div.menu_linki a:hover, div.menu_linki a:active
+            {
+                color: yellow;
+                background-color: lightseagreen;
 
-
-
+            }
+            div.menu_linki a:visited
+            {
+                color: darkred;
+                text-decoration: none;
+            }
             /*]]>*/
 
     </style>
@@ -93,9 +106,14 @@
         <div> To jest krótki tekst z divem</div>
         <span> To jes drugi krótki tekst ze span</span>
 
-
-
-
+        <br/><br/><br/>
+    <div class="menu_linki">
+    <a href="http://www.google.pl"> Google </a>
+    <br/>
+    <a href="http://www.wp.pl">Wp</a>
+        <br/>
+    <a href="http://www.demotywatory.pl">Demoty</a>
+    </div>
 
 
 
