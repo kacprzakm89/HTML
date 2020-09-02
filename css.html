@@ -19,18 +19,38 @@
             /* ten komentarz nie zostanie zinterpretowany w css*/
             /* <![CDATA[*/
 
-            p, b
-            {
-                color: fuchsia;
-                font-size: 16px;
-            }
+
+
 
             p.definicja
             {
                 color: indigo;
             }
 
+            .xxx
+            {
+                font-size: 26px;
+                margin-left: 50px;
+                color: orangered;
+            }
+
+            .xygs
+            {
+                position: fixed;
+                margin-left: 70%;
+                text-align: justify;
+            }
+
+            h1.xygs
+            {
+                font-size: 35px;
+            }
+
             h1#nazwa1
+            {
+                color: olivedrab;
+            }
+            h1#nazwa3
             {
                 color: olivedrab;
             }
@@ -40,7 +60,7 @@
                 background-color: #4080bf
             }
 
-            div
+            div.iceland
             {
                 background-color: #b22222;
                 text-align: justify;
@@ -63,6 +83,28 @@
                 color: darkred;
                 text-decoration: none;
             }
+
+            body
+            {
+               text-decoration: #B0E0E6;
+                font-size: 20px;
+            }
+
+            div.snowboard
+            {
+                color: slategrey;
+                text-decoration: inherit overline;
+                text-transform: uppercase; /* małe, duże litery itp*/
+                text-align: justify; /* wyrównanie np do prawej, centrum itp*/
+                text-indent: 100px; /* wcięcie */
+                word-spacing: 2em; /* przestrzeń między słowa a EM oznacza oile razy ma byćwiększe od wartości podanej w bo dy*/
+                line-height: 140%; /* można podac w px lub %, który będzie się odnosił do procentowego rozmiaru wielkości czcionki podanej w body*/
+                letter-spacing: 10px; /* przestrzeń pomiędzy literkami, podaje sie w px lub % lubpt ale oin jest stały i sie nie zmienia mimo wprowadzonych pewnych zmian */
+                line-height: normal; /* wysokość między jedną a druga linią */
+                white-space: normal; /* nowrap oznacza bez zawijania tekstu na stronie czyli nie dopasowuje sie do wielkości okienka*/
+
+            }
+
             /*]]>*/
 
     </style>
@@ -74,11 +116,13 @@
 <body style=" background-color: 	#2F4F4F">
         <!-- CSS Kaskadowy Arkusz Stylów -->
 
-        <h1 id="nazwa1"> To jest nagłówek</h1>
-        <h1 id="nazwa2"> To jest nagłówek</h1>
+        <p id="nazwa1" class="xxx"> To jest nagłówek</p>
+        <h1 id="nazwa2"> To jest nagłówek rudy chuj </h1>
+        <h1 id="nazwa3"  class="xxx"> This is text </h1>
+        <h1 class="xxx, xygs" ;"> To jest tekst ponad innymi </h1>
         <b>To jest bardzo ciekawy tekst </b>
         <p class="definicja" >To jest bardzo nieciekawy tekst </p>
-        <p>To jest bardzo ciekawy tekst </p>
+        <p>To jest bardzo ciechuj rudy !!!!!kawy tekst </p>
         <p>To jest bardzo ciekawy tekst </p>
         <p class="definicja">To jest bardzo nieciekawy tekst </p>
         <p>To jest bardzo ciekawy tekst </p>
@@ -91,7 +135,7 @@
         W roku 930 zebrali się oni po raz pierwszy na zgromadzeniu ogólnym, zwanym Althingiem. Althing był w średniowieczu
         dorocznym zgromadzeniem wszystkich wolnych mieszkańców wyspy.
         </span>
-        <div>
+        <div class="iceland">
         Islandia należy do najpóźniej zasiedlonych obszarów Europy.
         Pierwsi osadnicy pojawili się w 874. Byli to norwescy wikingowie oraz celtyccy (szkoccy i iryjscy) osadnicy.
         W roku 930 zebrali się oni po raz pierwszy na zgromadzeniu ogólnym, zwanym Althingiem. Althing był w średniowieczu
@@ -114,9 +158,13 @@
         <br/>
     <a href="http://www.demotywatory.pl">Demoty</a>
     </div>
-
-
-
+<br/>
+        <div class="snowboard">
+        Snowboarding – sport zimowy polegający na jeździe lub wykonywaniu manewrów na desce snowboardowej.
+        Za początek snowboardingu można uznać rok 1965, kiedy Sherman Poppen wymyślił "snurfera",
+        choć zjeżdżanie po zaśnieżonym stoku na jednej desce było praktykowane już wcześniej.
+        Dyscyplina wprowadzona została do programu Zimowych Igrzysk Olimpijskich w 1998 roku (konkurencje slalom gigant i half-pipe).
+        </div>
 
 
 
