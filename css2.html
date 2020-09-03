@@ -24,11 +24,31 @@
                 background-repeat: no-repeat;
                 background-position: right top;
                 background-attachment: fixed;
+            }
+
+            table.tabelkowo
+            {
+                width: 100%;
+                height: 500px;
+                border: 3px dotted green;
+                border-collapse: collapse;
+            }
+
+            table.tabelkowo td
+            {
+                border: 3px solid darkred;
+                padding: 50px;
+                text-align: center;
+                vertical-align: center;
+                background-color: yellow;
+                color: gray;
+                font-size: 50px;
 
 
 
 
             }
+
 
             div.example
             {
@@ -42,6 +62,13 @@
                 letter-spacing: 0;
                 line-height: 1.6em;
                 font-size: 1em;
+                border-style: solid;
+                border-width: 20px;
+                border-color: firebrick;
+                border-top-color: palevioletred;
+                /* border-top: 1px solid black; --> też można umieścic wiele wartości w 2 linijce */
+
+
             }
 
             /*]]>*/
@@ -63,6 +90,15 @@
             </div>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
+
+    <table class="tabelkowo" width="500" height="500"  cellspacing="10"> <!-- border="3" -->
+            <tr>
+            <td> 1 </td> <td> 2 </td>
+        </tr>
+        <tr>
+            <td> 3 </td> <td> 4 </td>
+        </tr>
+    </table>
 
     </body>
 
