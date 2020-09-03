@@ -92,12 +92,19 @@
 
             div.snowboard
             {
+                font-style: oblique; /* pochylenie czcionki i inne style*/
+                font-weight: bold;
+                font-variant: small-caps; /* poprzez text-transform tez moge nadac wielkosc liter np ze wszystkie beda z wielkiej litery*/
+                font-family: "Verdana, Geneva"; /* rodzaj stylu czcionki*/
+                font-size: 0.8em; /*rozmiar można ustawiać poprzez określenia jaklarg itp lub podając wartość px lub np 3em (ile razy większe od wyjściowej wielkości), 3ex to ok odpowiednia wartość względem wyjściowej;mogą być też mm, cm, % */
+                /* font: italic small-caps bold 30px Verdana --> ten zapis tez jest ok*/
+
                 color: slategrey;
                 text-decoration: inherit overline;
-                text-transform: uppercase; /* małe, duże litery itp*/
+                text-transform: none; /* małe, duże litery itp*/
                 text-align: justify; /* wyrównanie np do prawej, centrum itp*/
                 text-indent: 100px; /* wcięcie */
-                word-spacing: 2em; /* przestrzeń między słowa a EM oznacza oile razy ma byćwiększe od wartości podanej w bo dy*/
+                word-spacing: 0.8em; /* przestrzeń między słowa a EM oznacza oile razy ma byćwiększe od wartości podanej w bo dy*/
                 line-height: 140%; /* można podac w px lub %, który będzie się odnosił do procentowego rozmiaru wielkości czcionki podanej w body*/
                 letter-spacing: 10px; /* przestrzeń pomiędzy literkami, podaje sie w px lub % lubpt ale oin jest stały i sie nie zmienia mimo wprowadzonych pewnych zmian */
                 line-height: normal; /* wysokość między jedną a druga linią */
@@ -119,7 +126,7 @@
         <p id="nazwa1" class="xxx"> To jest nagłówek</p>
         <h1 id="nazwa2"> To jest nagłówek rudy chuj </h1>
         <h1 id="nazwa3"  class="xxx"> This is text </h1>
-        <h1 class="xxx, xygs" ;"> To jest tekst ponad innymi </h1>
+        <h1 class="xxx, xygs"> To jest tekst ponad innymi </h1>
         <b>To jest bardzo ciekawy tekst </b>
         <p class="definicja" >To jest bardzo nieciekawy tekst </p>
         <p>To jest bardzo ciechuj rudy !!!!!kawy tekst </p>
@@ -170,7 +177,7 @@
 
 
 
-        <body>
+
 
 </body>
 
